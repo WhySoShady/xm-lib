@@ -44,7 +44,7 @@ end
 ---@param animation string
 ---@return ped
 function XM:CreatePed(hash, posX, posY, posZ, heading, freeze, invincible, animation)
-    local ped = CreatePed(1, hash, posX, posY, posZ, heading, false, true)
+    local ped = CreatePed(1, hash, posX, posY, (posZ)-1, heading, false, true)
     FreezeEntityPosition(ped, freeze or true)
     SetEntityInvincible(ped, invincible or true)
     SetBlockingOfNonTemporaryEvents(ped, freeze or true)
