@@ -21,7 +21,7 @@ shared_scripts {
 This will allow you to use all my native function remakes in your own code
 
 ## Support
-I do not provide support but you can add me at `xim.gz` on discord and attempt to get ahold od me
+I do not provide support but you can add me at `xim.gz` on discord and attempt to get ahold of me
 
 ## Documentation
 
