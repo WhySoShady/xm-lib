@@ -2,7 +2,6 @@
     Author  :   xim.gz#0
     Date    :   12/17/23    
 --]]
-
 XM = {}
 
 -- Waypoint & Blip functions
@@ -64,3 +63,10 @@ function XM:Hasher(hashString)
     return hash
 end
 
+---@param message string
+---@param duration integer
+function XM:Subtitle(message, duration)
+    BeginTextCommandPrint('STRING')
+    AddTextComponentString(message)
+    EndTextCommandPrint(duration, true)
+end
