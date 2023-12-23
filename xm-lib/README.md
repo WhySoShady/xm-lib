@@ -104,3 +104,18 @@ function XM:Hasher(hashString)
     return hash
 end
 ```
+
+### Subtitle()
+
+| Parameter | Type | Required |   Defaults   |
+|:---------:|:----:|:--------:|:------------:|
+|message    |string| yes      |n/a           |
+|duration   |int   | yes      |n/a           |
+
+```lua
+function XM:Subtitle(message, duration)
+    BeginTextCommandPrint('STRING')
+    AddTextComponentString(message)
+    EndTextCommandPrint(duration, true)
+end
+```
